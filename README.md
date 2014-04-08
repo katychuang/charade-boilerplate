@@ -11,10 +11,11 @@ You need the lastest ghc platform that you can download from [haskell.org](http:
 
 
 ```sh
-$ git clone https://github.com/Soostone/charade.git
-$ cd charade
-$ cabal install
-$ dist/build/charade/charade
+$ git clone https://github.com/katychuang/charade-boilerplate.git
+$ cd charade-boilerplate
+$ cabal sandbox init
+$ cabal install charade
+$ .cabal-sandbox/bin/charade
 
 # Default port runs on 8000, for your own port use this command
 $ dist/build/charade/charade -p 8080
@@ -34,12 +35,12 @@ The structure of files look like the following
    |---fonts
    |---img
    |-----icons
-   |-------social
-   |-------social2
-   |-------social_big
-   |-------social_small
    |---js
    |-----libs
    |-templates
    |---heist
 ```
+
+![Screenshot](static/img/screenshot.png)
+
+
